@@ -6,14 +6,7 @@ sudo adduser perforce
 sudo chown perforce p4d
 
 sudo mkdir /home/perforce/depot
-sudo mkdir /home/perforce/log
-sudo mkdir /home/perforce/journal
-
-sudo chown perforce /home/perforce
 sudo chown perforce /home/perforce/depot
-sudo chown perforce /home/perforce/log
-sudo chown perforce /home/perforce/journal
-
 sudo mv p4d /home/perforce
 
 cd /etc/systemd/system
