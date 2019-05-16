@@ -1,4 +1,4 @@
-Runs with DigitalOcean Ubuntu 18.04.2 and Perforce 2019.1
+Runs with DigitalOcean Ubuntu 18.04 and Perforce 2019.1
 
 # Usage
 
