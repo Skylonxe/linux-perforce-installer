@@ -5,7 +5,6 @@ chmod +x p4d
 sudo adduser perforce
 sudo chown perforce p4d
 
-sudo mkdir /home/perforce
 sudo mkdir /home/perforce/depot
 sudo mkdir /home/perforce/log
 sudo mkdir /home/perforce/journal
@@ -20,6 +19,7 @@ sudo mv p4d /home/perforce
 cd /etc/systemd/system
 wget https://raw.githubusercontent.com/Skylonxe/linux-perforce-installer/master/p4d.service
 
-systemctl enable p4d
+sudo systemctl daemon-reload
+sudo systemctl enable p4d
 
 sudo reboot
