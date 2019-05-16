@@ -1,7 +1,6 @@
 # About
 
-
-Runs with DigitalOcean Ubuntu 18.04 and Perforce 2019.1
+Installs Perforce 2019.1 server. Tested with Ubuntu 18.04 (powered by DigitalOcean).
 
 # Usage
 
