@@ -1,4 +1,4 @@
-# Example Perforce systemd file (p4d.service):
+# Perforce systemd file (p4d.service):
 #
 # This service file will start Perforce at boot, and
 # provide everything needed to use systemctl to control
