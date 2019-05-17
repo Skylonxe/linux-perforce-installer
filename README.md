@@ -33,5 +33,5 @@ p4 configure set run.users.authorize=1
 p4 configure set dm.keys.hide=2
 4. Set type map: p4 typemap, copy there content from typemap file
 5. Copy .p4ignore file to workspace
-6. cd to workspace and set .p4ignore: p4 set P4IGNORE=.p4ignore.txt
+6. cd to workspace and set .p4ignore: p4 set P4IGNORE=.p4ignore
 7. Add whole project
