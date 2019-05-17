@@ -29,7 +29,7 @@ Environment=P4JOURNAL=/home/perforce/journal
 Environment=P4LOG=/home/perforce/log
 
 # The command used to start Perforce:
-ExecStart=/home/perforce/p4d
+ExecStart=/home/perforce/p4d -d
 
 # Taming the Out of Memory Killer (oomkiller) Daemon
 OOMScoreAdjust=-500
