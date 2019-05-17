@@ -25,4 +25,6 @@ The created server will have default Perforce installation settings. This means 
 
 # Ignore file
 Run on client:
-p4 set P4IGNORE=.p4ignore.txt
+
+
+        p4 set P4IGNORE=.p4ignore.txt
