@@ -22,9 +22,51 @@ Afterwards, the server will restart and you should then be able to connect to yo
 The created server will have default Perforce installation settings. This means anyone who connects to your server can create a user account without authorization. After you create your first user, you should close this security hole by using the following `p4` command from your Perforce Client.
 
         p4 configure set dm.user.noautocreate=2
+        
+# Full client steps
 
-# Ignore file
-Run on client:
+1. Set password security level in admin tool
+2. Apply environment settings in perforce client
+3. Run:
+p4 configure set dm.user.noautocreate=2
+p4 configure set run.users.authorize=1    
+p4 configure set dm.keys.hide=2
+4. Set type map: p4 typemap
 
+# Perforce File Type Mapping Specifications.
+#
+#  TypeMap:             a list of filetype mappings; one per line.
+#                       Each line has two elements:
+#
+#                       Filetype: The filetype to use on 'p4 add'.
+#
+#                       Path:     File pattern which will use this filetype.
+#
+# See 'p4 help typemap' for more information.
 
-        p4 set P4IGNORE=.p4ignore.txt
+TypeMap:  
+                binary+S2w //depot/....exe
+                binary+S2w //depot/....dll
+                binary+S2w //depot/....lib
+                binary+S2w //depot/....app
+                binary+S2w //depot/....dylib
+                binary+S2w //depot/....stub
+                binary+S2w //depot/....ipa
+                binary //depot/....bmp
+                text //depot/....ini
+                text //depot/....config
+                text //depot/....cpp
+                text //depot/....h
+                text //depot/....c
+                text //depot/....cs
+                text //depot/....m
+                text //depot/....mm
+                text //depot/....py
+                binary+l //depot/....uasset
+                binary+l //depot/....umap
+                binary+l //depot/....upk
+                binary+l //depot/....udk
+
+5. Copy .p4ignore file to workspace
+6. cd to workspace and set .p4ignore: p4 set P4IGNORE=.p4ignore.txt
+7. Add whole project
