@@ -4,6 +4,9 @@ Installs Perforce 2019.1 server. Tested with Ubuntu 18.04 (powered by DigitalOce
 All perforce files will be in /home/perforce
 
 Created to be used with UE4 projects.
+Full version available at:
+https://allarsblog.com/2014/09/24/setup-perforce-digital/
+https://allarsblog.com/2017/04/05/populating-perforce-with-an-unreal-engine-source-build/
 
 # Usage
 
@@ -36,3 +39,5 @@ p4 configure set dm.keys.hide=2
 6. Enable .p4ignore use with command: 
 ```p4 set P4IGNORE=.p4ignore```
 7. Add whole project in P4V (initial commit)
+
+
