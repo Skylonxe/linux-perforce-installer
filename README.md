@@ -24,10 +24,10 @@ Afterwards, the server will restart and you should then be able to connect to yo
 1. Set password security level in P4V admin tool
 2. Click 'Apply environment settings' in perforce client connection dropdown
 3. Run cmd, and cd into your local perforce depot
-p4 configure set dm.user.noautocreate=2
+```p4 configure set dm.user.noautocreate=2
 p4 configure set run.users.authorize=1    
-p4 configure set dm.keys.hide=2
-4. Set type map with command: p4 typemap, copy there content from typemap file from this repo
+p4 configure set dm.keys.hide=2```
+4. Set type map with command: ```p4 typemap```, copy there content from typemap file from this repo
 5. Copy .p4ignore file from this repo into your workspace
-6. Enable .p4ignore use with command: p4 set P4IGNORE=.p4ignore
+6. Enable .p4ignore use with command: ```p4 set P4IGNORE=.p4ignore```
 7. Add whole project in P4V (initial commit)
