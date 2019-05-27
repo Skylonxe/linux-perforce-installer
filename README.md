@@ -24,7 +24,7 @@ You will be asked to create a password and user details for a new unprivileged s
 
 Afterwards, the server will restart and you should then be able to connect to your Perforce server.
         
-# Client steps (User's computer which have P4V client installed)
+# Optional security and ease of use client steps (User's computer which have P4V client installed)
 
 1. Set password security level in P4V admin tool
 2. Click 'Apply environment settings' in perforce client connection dropdown
