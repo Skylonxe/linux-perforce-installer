@@ -40,6 +40,6 @@ p4 configure set dm.keys.hide=2
 5. Copy .p4ignore file from this repo into your workspace
 6. Enable .p4ignore use with command: 
 ```p4 set P4IGNORE=.p4ignore```
-7. Add whole project in P4V (initial commit)
+7. Add whole project in P4V (initial commit) : Right click root folder in Workspace tab and choose Mark for Add
 
 
