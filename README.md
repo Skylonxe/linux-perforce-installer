@@ -28,7 +28,7 @@ Afterwards, the server will restart and you should then be able to connect to yo
 
 1. Set password security level in P4V admin tool 'Tools > Administration > Administration > Password Security Level', confirm superuser dialog if needed
 2. Apply environment settings in P4V 'Connection > Environment Settings > OK'
-3. Run cmd, and cd into your local perforce depot
+3. Run cmd, cd .../path/... into your local perforce depot and execute following commands
 ```
 p4 configure set dm.user.noautocreate=2
 p4 configure set run.users.authorize=1    
