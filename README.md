@@ -30,9 +30,9 @@ Afterwards, the server will restart and you should then be able to connect to yo
 2. Apply environment settings in P4V 'Connection > Environment Settings > OK'
 3. Run cmd, cd .../path/... into your local perforce depot and execute following commands
 ```
-p4 configure set dm.user.noautocreate=2
-p4 configure set run.users.authorize=1    
-p4 configure set dm.keys.hide=2
+p4 configure set dm.user.noautocreate=2    // disable unauthorized user creation (so users need to be created manually by admin)
+p4 configure set run.users.authorize=1     // disable unauthorized viewing of your Perforce user list
+p4 configure set dm.keys.hide=2            // disable unauthorized viewing of your Perforce config settings
 ```
 4. Set type map with command: 
 ```p4 typemap```
