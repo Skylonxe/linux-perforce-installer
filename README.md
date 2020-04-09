@@ -14,6 +14,8 @@ https://allarsblog.com/2017/04/05/populating-perforce-with-an-unreal-engine-sour
 
 In shell, run the following commands in your terminal. You don't need to download this repo, that is what the first line in the following code does.
 
+NOTE TO MYSELF: Update scripts to include SSL: https://community.perforce.com/s/article/15265?r=6&ui-force-components-controllers-recordGlobalValueProvider.RecordGvp.getRecord=1
+
 ```shell
 wget https://raw.githubusercontent.com/Skylonxe/linux-perforce-installer/master/install-perforce
 chmod +x install-perforce
