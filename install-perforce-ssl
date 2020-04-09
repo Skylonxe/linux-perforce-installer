@@ -21,6 +21,9 @@ export P4SSLDIR=/home/perforce/ssl
 ./p4d -Gc
 unset P4SSLDIR
 
+sudo chown perforce /home/perforce/ssl/certificate.txt
+sudo chown perforce /home/perforce/ssl/privatekey.txt
+
 sudo systemctl daemon-reload
 sudo systemctl enable p4d
 
