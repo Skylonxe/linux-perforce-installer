@@ -8,18 +8,19 @@ sudo chown perforce p4d
 sudo mkdir /home/perforce/depot
 sudo chown perforce /home/perforce/depot
 sudo mv p4d /home/perforce
-sudo mkdir /home/perforce/SSL
-sudo chown perforce /home/perforce/SSL
-sudo chmod 0700 /home/perforce/SSL
+sudo mkdir /home/perforce/ssl
+sudo chown perforce /home/perforce/ssl
+sudo chmod 0700 /home/perforce/ssl
 
 cd /etc/systemd/system
 wget https://raw.githubusercontent.com/Skylonxe/linux-perforce-installer/master/p4d-ssl.service
 
+cd /home/perforce
+export P4SSLDIR=/home/perforce/ssl
+./p4d -Gc
+unset P4SSLDIR
+
 sudo systemctl daemon-reload
 sudo systemctl enable p4d
-
-cd /home/perforce
-./p4d -Gc
-
 
 sudo reboot
