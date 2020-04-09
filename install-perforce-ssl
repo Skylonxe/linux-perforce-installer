@@ -1,0 +1,25 @@
+#!/bin/sh
+
+wget ftp://ftp.perforce.com/perforce/r19.1/bin.linux26x86_64/p4d
+chmod +x p4d
+sudo adduser perforce
+sudo chown perforce p4d
+
+sudo mkdir /home/perforce/depot
+sudo chown perforce /home/perforce/depot
+sudo mv p4d /home/perforce
+sudo mkdir /home/perforce/SSL
+sudo chown perforce /home/perforce/SSL
+sudo chmod 0700 /home/perforce/SSL
+
+cd /etc/systemd/system
+wget https://raw.githubusercontent.com/Skylonxe/linux-perforce-installer/master/p4d-ssl.service
+
+sudo systemctl daemon-reload
+sudo systemctl enable p4d
+
+cd /home/perforce
+./p4d -Gc
+
+
+sudo reboot
