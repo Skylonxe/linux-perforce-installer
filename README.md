@@ -1,7 +1,6 @@
 # About
 
-Installs Perforce 2019.1 server. Tested with Ubuntu 18.04 & Debian 10 (powered by DigitalOcean) .
-All perforce files will be in /home/perforce
+Installs Perforce 2019.1 server. Tested with Ubuntu 18.04 & Debian 10 (powered by DigitalOcean). All perforce files will be in /home/perforce
 
 Originally created to be used with UE4 projects.
 
