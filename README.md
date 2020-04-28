@@ -14,7 +14,7 @@ https://allarsblog.com/2017/04/05/populating-perforce-with-an-unreal-engine-sour
 
 In shell, run the following commands in your terminal. You don't need to download this repo, that is what the first line in the following code does.
 
-NOTE: If you want to use encrypted SSL perforce server, use SSL version of following script.
+NOTE: If you want to use encrypted SSL perforce server, use SSL version of the following script.
 
 Non-SSL
 
@@ -34,7 +34,7 @@ sudo ./install-perforce-ssl
 
 You will be asked to create a password and user details for a new unprivileged system user named `perforce`. You generally will never need to ever log into your server with this user, but I still suggest a password you won't lose. This is *not* a Perforce user, this is a Linux/Ubuntu user for the server only. You will create your Perforce user when you connect for the first time.
 
-Afterwards, the server will restart and you should then be able to connect to your Perforce server. If you are using SSL server, you will need to connect to host using format ssl:serverIPorDomain:port (examples: ssl:example.com:1666, ssl:192.168.1.1:1666)
+Afterwards, the server will restart and you should then be able to connect to your Perforce server. If you are using SSL server, you will need to connect to the host using format ssl:serverIPorDomain:port (examples: ssl:example.com:1666, ssl:192.168.1.1:1666)
         
 # Optional security and ease of use client steps (User's computer which has P4V client installed)
 
