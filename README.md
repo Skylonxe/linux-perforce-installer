@@ -1,6 +1,6 @@
 # About
 
-Installs Perforce 2019.1 server. Tested with Ubuntu 18.04 (powered by DigitalOcean).
+Installs Perforce 2019.1 server. Tested with Ubuntu 18.04 & Debian 10 (powered by DigitalOcean) .
 All perforce files will be in /home/perforce
 
 Created to be used with UE4 projects.
@@ -13,6 +13,8 @@ https://allarsblog.com/2017/04/05/populating-perforce-with-an-unreal-engine-sour
 # Usage
 
 In shell, run the following commands in your terminal. You don't need to download this repo, that is what the first line in the following code does.
+
+NOTE: If you want to use encrypted SSL perforce server, use install-perforce-ssl version of following script.
 
 ```shell
 wget https://raw.githubusercontent.com/Skylonxe/linux-perforce-installer/master/install-perforce
