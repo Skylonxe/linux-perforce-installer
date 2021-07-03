@@ -30,6 +30,20 @@ TypeMap:
                 binary+l //....p12
                 binary+l //....otf
                 binary+l //....abc
+                binary+l //....uasset
+                binary+l //....umap
+                binary+l //....upk
+                binary+l //....udk
+                binary+l //....sbs
+                binary+l //....ztl
+                binary+l //....zpr
+                binary+l //....obj
+                binary+l //....assbin
+                binary+l //....ma
+                binary+l //....max
+                binary+l //....mdd
+                binary+l //....blend
+                binary+l //....spp
                 text //....ini
                 text //....config
                 text //....cpp
@@ -51,7 +65,3 @@ TypeMap:
                 text+w //....target
                 text+w //....modules
                 text+w //....sln
-                binary+l //....uasset
-                binary+l //....umap
-                binary+l //....upk
-                binary+l //....udk
